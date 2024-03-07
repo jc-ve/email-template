@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Document</title>
+  </head>
+  <style>
+    .box {
+      background-color: antiquewhite;
+      width: 48%;
+      float: left;
+      margin: 1%;
+      text-align: center;
+    }
+
+    #red {
+      color: red;
+    }
+
+    #blue {
+      color: blue;
+    }
+  </style>
+  <body>
+    <!-- Paragraph & HTML Comments -->
+    <p>This is a paragraph.</p>
+    <p>
+      This is another <br />
+      paragraph.
+    </p>
+    <!-- This is an HTML comment -->
+
+    <!-- HTML Headings -->
+    <p>
+      HTML Headings range from: <br />
+      h1 being the largest <br />
+      to h6 being the smallest.
+    </p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- HTML Text Formatting -->
+    <p>This is <b>Bold text</b>.</p>
+    <p>This is <strong>Important text</strong>.</p>
+    <p>This is <i>Italic text</i>.</p>
+    <p>This is <em>Emphasized text</em>.</p>
+    <p>This is <u>Underlined text</u>.</p>
+    <p>This is <ins>Inserted text</ins>.</p>
+    <p>This is <small>Smaller text</small>.</p>
+    <p>This is <big>Bigger text</big>.</p>
+    <p>This is <sub>Subscript text</sub>.</p>
+    <p>This is <sup>Superscript text</sup>.</p>
+    <p>This is <mark>Marked text</mark>.</p>
+    <p>This is <del>Deleted text</del>.</p>
+
+    <!-- HTML Links -->
+    <p>HTML 'a' tag is for Anchor and defines a hyperlink.</p>
+    <a href="https://google.com" target="_blank" title="Google Link"
+      >Google Link</a
+    >
+    <br /><br />
+
+    <a href="#name">Another Text Link to h2 id.</a>
+    <h2 id="name">Our name id.</h2>
+
+    <!-- HTML Images & File Paths -->
+    <a href="https://google.com" target="_blank">
+      <img
+        src="https://placehold.co/250x150"
+        alt="Alternative Text"
+        title="Image Title"
+      />
+    </a>
+    <br />
+    <img src="example.jpg" alt="Alternative Text" width="250" />
+    <br />
+    <img src="img/example.jpg" alt="Alternative Text" width="300" />
+
+    <!-- HTML Attributes -->
+    <p>HTML Attributes come in name/value pairs like this: name="value".</p>
+    <p>
+      This is a <a href="https://google.com" target="_blank">Google Link</a>.
+    </p>
+    <img
+      src="example.jpg"
+      title="Image Title"
+      alt="Alternative Text"
+      width="200"
+      height="200"
+      style="border: 2px solid red; border-radius: 50%"
+    />
+    <h3 style="color: red">Red Text</h3>
+
+    <!-- Unorder Lists -->
+    <p>Unordered Lists start with the 'ul' tag.</p>
+    <p>Combined in them are List Item 'li' tags.</p>
+    <ul>
+      <li>First Item</li>
+      <li>
+        Second List Item
+        <ul>
+          <li>New List 1</li>
+          <li>New List 2</li>
+        </ul>
+      </li>
+
+      <li>Third List Item</li>
+    </ul>
+
+    <!-- Ordered Lists -->
+    <p>Ordered lists start with the 'ol' and contain 'li' list items.</p>
+    <ol>
+      <li>Soda</li>
+      <li>
+        Milkshake
+        <ol>
+          <li>Vanilla</li>
+          <li>Chocolate</li>
+          <li>Strawberry</li>
+        </ol>
+      </li>
+      <li>Water</li>
+    </ol>
+
+    <!-- HTML Tables -->
+
+    <p>The 'table' tag defines an HTML Table.</p>
+    <p>Each table row is defined with a 'tr' tag.</p>
+    <p>Table header is defined with a 'th' tag.</p>
+    <p>Table cell is defined with a 'td' tag.</p>
+
+    <table style="width: 100%; text-align: center" border="1">
+      <tr>
+        <th>Person</th>
+        <th>City</th>
+        <th>Business</th>
+      </tr>
+      <tr>
+        <td>Bill</td>
+        <td>Seattle</td>
+        <td>Coffee Shop</td>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>London</td>
+        <td>Hair Salon</td>
+      </tr>
+      <tr>
+        <td>Phil</td>
+        <td>Sydney</td>
+        <td>Lounge</td>
+      </tr>
+    </table>
+
+    <!-- HTML Forms -->
+    <p>
+      The HTML 'form' tag is used to create a form where data or information can
+      be collected once submitted by a website visitor.
+    </p>
+    <p>
+      In order to submit the form, a back-end action needs to be connected to
+      the form to process the data.
+    </p>
+    <p>
+      An example of this would be a PHP (Hypertext Preprocessor) script in a
+      separate file. For example: 'contact.php' as the file name and type.
+    </p>
+    <p>While connecting to the file there are two main methods: GET & POST.</p>
+    <p>
+      GET is the default method and would be used to process the data and get
+      information that is already stored somewhere. Like with Google Search,
+      once you submit your search you will see the info you submitted in the
+      search bar and it will return data relative to the info submitted.
+    </p>
+    <p>
+      The POST method is used to instert, upload, or update data. This could
+      mean submitting information in a contact form on a website or submitting
+      your credit card at checkout.
+    </p>
+    <p>
+      The POST method is more secure as it doesn't save or cache any information
+      in the browser, nor does it change the URL like with the GET method and it
+      can't be bookmarked.
+    </p>
+
+    <!-- HTML Form Elements -->
+
+    <form action="example.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+      <br />
+      <textarea
+        name="message"
+        cols="22"
+        rows="3"
+        placeholder="Enter your message"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Send message" />
+    </form>
+    <br /><br />
+
+    <!-- HTML Form Input Types -->
+    <form action="">
+      <input type="color" />
+      <br /><br />
+      <input type="time" />
+      <br /><br />
+      <input type="week" />
+      <br /><br />
+      <input type="month" />
+      <br /><br />
+      <input type="date" />
+      <br /><br />
+      <input type="datetime-local" />
+      <br /><br />
+      <input type="file" />
+      <br /><br />
+      <input type="number" placeholder="Number" />
+      <br /><br />
+      <input type="email" placeholder="Email" />
+      <br /><br />
+      <input type="search" placeholder="Search" />
+      <br /><br />
+      <input type="radio" />
+      <br /><br />
+      <input type="checkbox" />
+      <br /><br />
+      <input type="range" />
+      <br /><br />
+      <input type="button" value="Button" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+      <br /><br />
+      <input type="reset" value="Reset" />
+    </form>
+    <br /><br />
+
+    <!-- HTML Form Example -->
+    <form action="example.php" method="POST">
+      <fieldset>
+        <legend>Contact Us</legend>
+        <label for="username">Name:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your name."
+          required
+        />
+        <br /><br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email."
+          required
+        />
+        <br /><br />
+        <label for="reason">Reason for email:</label>
+        <select name="reason" id="reason">
+          <option value="support">Support</option>
+          <option value="sales">Sales</option>
+          <option value="review">Review</option>
+        </select>
+        <br /><br />
+        <label for="date">Pick a date:</label>
+        <input type="date" name="date" id="date" />
+        <br /><br />
+        How should we reply?
+        <br />
+        <label for="phone">Phone:</label>
+        <input type="radio" name="phone" id="phone" />
+        <br />
+        <label for="email-reply">Email:</label>
+        <input type="radio" name="email-reply" id="email-reply" />
+        <br /><br />
+        <textarea
+          name="message"
+          cols="26"
+          rows="5"
+          placeholder="Enter your message."
+        ></textarea>
+        <br /><br />
+        <input type="submit" value="Contact Us" />
+      </fieldset>
+    </form>
+
+    <!-- Block & Inline HTML Elements -->
+    <p style="background-color: aqua">
+      This is a Block Element which takes up the full width and starts a new
+      line.
+    </p>
+    <b style="background-color: aquamarine"
+      >This is an Inline Element which only takes up as much space as it
+      needs</b
+    >
+    <h1 style="border: 1px solid black">Block</h1>
+
+    <big style="border: 1px solid black">Inline</big>
+
+    <p style="border: 1px solid black; background-color: yellow">
+      Cheese block
+    </p>
+    <p>Standing <mark>inline</mark> at the store.</p>
+
+    <!-- HTML Classes & ID -->
+    <p>
+      In HTML, 'id' and 'class' attributes can be used to identify elements in
+      CSS or though other references such as JavaScript or PHP.
+    </p>
+    <p>The 'id' attribute should represent only one element on a page.</p>
+    <p>The 'class' attribute can represent multiple elements on a page.</p>
+
+    <div class="box">
+      <h1 id="red">Red Shirt</h1>
+      <p>The text above is the color red.</p>
+    </div>
+    <div class="box">
+      <h1 id="blue">Blue Shirt</h1>
+      <p>The text above is the color blue.</p>
+    </div>
+
+    <!-- HTML Audio -->
+    <h2>HTML Audio</h2>
+    <audio controls>
+      <source src="example.mp3" type="audio/mpeg" />
+      Your browser does not support the audio elements.
+    </audio>
+
+    <!-- HTML Video -->
+    <h2>HTML Video</h2>
+    <video width="100%" controls>
+      <source src="example.mp4" type="video/mp4" />
+      Your browser does not support video elements.
+    </video>
+  </body>
+</html>
