@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #d8dbdb;
+        padding: 20px;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 18px;
+        color: #565859;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .wrapper {
+        background-color: #f6faff;
+        max-width: 700px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px #616e79;
+        border-top: 10px solid #37a28f;
+        border-radius: 5px 5px 10px 10px;
+      }
+
+      .logo {
+        text-align: center;
+        padding: 1% 0;
+      }
+
+      .logo__img {
+        max-width: 250px;
+      }
+
+      .three-columns {
+        width: 29.3%;
+        padding: 5% 2% 6%;
+        text-align: center;
+        float: left;
+        margin: 15px 0 32px;
+      }
+
+      .three-colums img {
+        max-width: 135px;
+      }
+
+      h2 {
+        font-weight: 900;
+        font-size: 28px;
+        letter-spacing: 1px;
+        margin: 20px 0 8px;
+      }
+
+      p {
+        line-height: 26px;
+        margin-bottom: 16px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #37a28f;
+        padding: 10px 14px;
+        letter-spacing: 1px;
+        border-radius: 6px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.4s;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: #3db5a0;
+      }
+
+      .orange {
+        border: 1px solid #fe6b58;
+        width: 96%;
+        margin: 15px auto;
+      }
+
+      .two-columns {
+        float: left;
+        width: 46%;
+        padding: 5% 2%;
+        margin: 10px 0 26px;
+      }
+
+      .two-columns h2 {
+        margin: 0;
+      }
+
+      .social,
+      .contact {
+        list-style: none;
+        text-align: center;
+      }
+
+      .social {
+        padding: 10px;
+        margin: 20px 0 5px;
+        width: 96%;
+      }
+
+      .social li {
+        display: inline;
+      }
+
+      .social img {
+        max-width: 40px;
+      }
+
+      .social a {
+        text-decoration: none;
+      }
+
+      .contact,
+      .contact a:link,
+      .contact a:visited {
+        color: #2b9684;
+        font-weight: 600;
+        text-decoration: none;
+        padding-bottom: 6%;
+        transition: 0.2s;
+      }
+
+      .contact a:hover,
+      .contact a:active {
+        color: #fe6b58;
+      }
+
+      .contact li {
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          padding: 5px;
+        }
+
+        .three-columns,
+        .two-columns {
+          width: 96%;
+          margin: 0 0 35px;
+        }
+
+        .three-columns img {
+          max-width: 155px;
+        }
+
+        .orange {
+          margin-bottom: 30px;
+        }
+
+        .two-columns.second {
+          padding-left: 15px;
+          padding-bottom: 30px;
+        }
+      }
+    </style>
+    <title>HTML Email Template Practice</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <a href="https://example.com" target="_blank">
+          <img
+            src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/c22e00d9-0489-e253-adea-de4318060a9f.png"
+            alt="HTML5 logo"
+            title="HTML5 logo"
+            class="logo__img"
+          />
+        </a>
+      </div>
+      <a href="https://example.com" target="_blank">
+        <img
+          src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/dbe1378f-1af6-9a4b-15cd-1cdaf3442e9d.png"
+          alt="Banner"
+          title="Banner"
+          class="banner"
+        />
+      </a>
+
+      <div class="three-columns">
+        <a href="https://example.com" target="_blank">
+          <img
+            src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/44f39351-db51-9511-0b64-91f7c65bb829.png"
+            alt="Mouse icon"
+            title="Mouse icon"
+          />
+        </a>
+        <h2>Email Development</h2>
+        <p>
+          There are many different email clients to consider when developing
+          your email template.
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="btn"
+            >Learn More</a
+          >
+        </div>
+      </div>
+
+      <div class="three-columns">
+        <a href="https://example.com" target="_blank">
+          <img
+            src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/fd886592-ece5-2c88-c7bb-2f552e6a61c4.png"
+            alt="Mobile icon"
+            title="Mobile"
+          />
+        </a>
+        <h2>Mobile Friendly</h2>
+        <p>
+          Most emails are opened on mobile devices today, so make sure your
+          design is mobile friendly.
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="btn"
+            >HTML Email</a
+          >
+        </div>
+      </div>
+
+      <div class="three-columns">
+        <a href="https://example.com" target="_blank">
+          <img
+            src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/c97633d2-d622-69a2-95ad-7b623409ece8.png"
+            alt="Desktop icon"
+            title="Desktop icon"
+          />
+        </a>
+        <h2>Desktop Clients</h2>
+        <p>
+          For desktop emali clients like Outlook, we'll need to pay special
+          attention once we use tables.
+        </p>
+        <div class="button-holder">
+          <a href="https://example.com" target="_blank" class="btn"
+            >Development</a
+          >
+        </div>
+      </div>
+
+      <hr class="orange" />
+
+      <div class="two-columns">
+        <a href="https://example.com" target="_blank">
+          <img
+            src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/f2f1cf6d-5dba-a9a2-697f-db22391a5685.png"
+            alt="Pie chart"
+            title="Pie chart"
+          />
+        </a>
+      </div>
+
+      <div class="two-columns second">
+        <h2>Latest Email Design</h2>
+        <p>
+          There are a lot of email clients to consider when choosing a design
+          width but 600px is the most common.
+        </p>
+        <a href="https://example.com" target="_blank" class="btn"
+          >Email Design Course</a
+        >
+      </div>
+
+      <hr class="orange" />
+
+      <ul class="social">
+        <li>
+          <a href="https://example.com" target="_blank">
+            <img
+              src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/b71f8e81-5363-5592-db44-5222a6059f40.png"
+              alt="Facebook"
+              title="Facebook"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank">
+            <img
+              src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/c9dcdec2-7d57-af71-784a-5f033ffb9551.png"
+              alt="Twitter"
+              title="Twitter"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank">
+            <img
+              src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/4cd24157-7d99-366e-8ffe-285eb6d600cf.png"
+              alt="Youtube"
+              title="Youtube"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank">
+            <img
+              src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/304f0957-3625-bf87-1eaf-6f62e65c2767.png"
+              alt="Instagram"
+              title="Instagram"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank">
+            <img
+              src="https://mcusercontent.com/b5601b4329b40215483e3ab36/images/22129f26-dae7-79bc-8feb-5aa2bde0bcb8.png"
+              alt="Linkedin"
+              title="Linkedin"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="contact">
+        <li>
+          <a href="https://example.com" target="_blank">www.portfolio.com</a>
+        </li>
+        <li>
+          <a href="tel:+18005555555">1-800-555-5555</a>
+        </li>
+        <li>
+          <a href="mailto:name@myportfolio.com">name@myportfolio.com</a>
+        </li>
+        <li>2 Town Road - City - State - 99999</li>
+        <li>
+          <a href="https://example.com" target="_blank">Unsubscribe</a> |
+          <a href="https://example.com" target="_blank">Preferences</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
